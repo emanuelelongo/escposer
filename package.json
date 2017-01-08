@@ -1,0 +1,29 @@
+{
+  "name": "escposer",
+  "version": "1.0.0",
+  "description": "ESC/POS buffer creator",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emanuelesono/escposer"
+  },
+  "keywords": [
+    "escpos",
+    "printer"
+  ],
+  "author": "emanuelesono",
+  "license": "MIT",
+  "homepage": "https://github.com/emanuelesono/escposer",
+  "dependencies": {
+    "iconv-lite": "*",
+    "mutable-buffer": "*"
+  },
+  "optionalDependencies": {
+    "get-pixels": "*",
+    "qr-image": "*"
+  },
+  "devDependencies": {
+  }
+}
