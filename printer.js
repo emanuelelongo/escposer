@@ -211,7 +211,7 @@ Printer.prototype.cashdraw = function(pin){
 };
 
 Printer.prototype.getData = function() {
-  let arr = new Uint8Array(this.buffer._size);
+  let arr = [];
   for (var i = 0; i < this.buffer._size; ++i) {
       arr[i] = this.buffer.buffer[i];
   }
