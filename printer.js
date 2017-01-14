@@ -210,8 +210,12 @@ Printer.prototype.cashdraw = function(pin){
   return this;
 };
 
-Printer.prototype.getBuffer = function() {
-  return this.buffer.buffer;
+Printer.prototype.getData = function() {
+  let arr = new Uint8Array(this.buffer._size);
+  for (var i = 0; i < this.buffer._size; ++i) {
+      arr[i] = this.buffer.buffer[i];
+  }
+  return arr;
 }
 
 module.exports = Printer;
